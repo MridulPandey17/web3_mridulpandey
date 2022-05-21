@@ -1,4 +1,5 @@
 class loan:
+    #constructors
     def __init__(self):
         self.interestrateb=0
         self.interestratel=0
