@@ -5,6 +5,7 @@ This program uses object oriented programming for creating loan
 sevices including lenders and borrowers.
 I have used python language in this program.
 
+To start with the program import loan from loanfinal
 The program starts with creating a class named loan and is followed
 by defining the constructors storing the personal details of the user
 i.e. the object. Then the user is asked to choose if he or she is
