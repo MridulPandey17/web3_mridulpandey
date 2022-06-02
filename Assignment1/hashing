@@ -14,5 +14,6 @@ while(text_hashed[:5]!='00000'):  #consition for finding string less than the sa
   text_hashed = strl.hexdigest()
 print(text)
 print(text_hashed)
+print("nonce value: {}".format(text[lengthstr:]))
 end = time.time()  #calculating time
 print("time={}".format(end - start))
