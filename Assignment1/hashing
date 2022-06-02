@@ -1,0 +1,18 @@
+!pip install pycryptodome
+import hashlib
+import time
+start = time.time()
+text = input('Input string: ')
+lengthstr=len(text)
+strl = hashlib.sha256(text.encode('utf-8'))
+text_hashed = strl.hexdigest()
+a=1
+while(text_hashed[:5]!='00000'):
+  text='{}{}'.format(text[:lengthstr], a)
+  a=a+1
+  strl = hashlib.sha256(text.encode('utf-8'))
+  text_hashed = strl.hexdigest()
+print(text)
+print(text_hashed)
+end = time.time()
+print("time={}".format(end - start))
