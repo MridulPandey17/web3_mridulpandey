@@ -7,7 +7,7 @@ lengthstr=len(text)
 strl = hashlib.sha256(text.encode('utf-8'))
 text_hashed = strl.hexdigest()
 a=1
-while(text_hashed[:5]!='00000' and text_hashed[5:]!='FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF'):  #consition for finding string less than the said number
+while(text_hashed[:5]!='00000'):  #consition for finding string less than the said number
   text='{}{}'.format(text[:lengthstr], a)  #appending string
   a=a+1
   strl = hashlib.sha256(text.encode('utf-8'))
