@@ -9,3 +9,4 @@ Along with this time library is imported to calculate the time taken
 to find the 1st hash value for the string increment system. 
 
 I had imported hashlib to use SHA 256 which was used to produce the required hashing value.
+I had run the program on google colab.
