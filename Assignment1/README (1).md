@@ -10,3 +10,13 @@ to find the 1st hash value for the string increment system.
 
 I had imported hashlib to use SHA 256 which was used to produce the required hashing value.
 I had run the program on google colab.
+
+
+Expected output from string input:
+
+
+Input string: iitk
+iitk1217060
+00000bde24704b17d1531816354d01810b1e6f01b1ea38e0c53d5fc5f3bfd70a
+nonce value: 1217060
+time=5.233118295669556 (may differ from system to system)
