@@ -53,13 +53,31 @@ principle=500
 rate=5
 time=3
 2. sendCoin: In this function address can be acquired from the predefined addresses of remix:
+
 sender address:0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+
+
 amount:5000
+
 receiver address:0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
+
+
 3. settleDues: 
+
+
 creditor address: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+
+
 4. getbalance:
+
+
 for sender: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+
+
 expected output for sender/owner=95000
+
+
 for receiver: 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
+
+
 expected output for receiver=5000
