@@ -64,10 +64,10 @@ contract Loan is MetaCoin {
         // A good way to prevent overflows will be to typecast principle, rate and the big number divider suggested in the above blogs as uint256 variables, just use uint256 R = rate;
         while (time > 0) {
              if (time % 2 == 1) {
-                  principal += principal * rate;
+                  principal += principal * rate/100;
                   time -= 1;
             } else {
-                rate = 2 * rate + rate * rate;
+                rate = 2 * rate + rate * rate/100;
                 time /= 2;
             }
         }
