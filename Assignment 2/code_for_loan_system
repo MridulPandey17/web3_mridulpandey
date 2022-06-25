@@ -89,13 +89,17 @@ contract Loan is MetaCoin {
             return false;
         }
     
+    
+    
     }
     
     function getOwnerBalance() public view returns(uint256) {
 				// use the getBalance function of MetaCoin contract to view the Balance of the contract Owner.
 				// hint: how do you access the functions / variables of the parent class in your favorite programming language? It is similar to that in solidity as well!
 	        return getBalance(owner);  
-    
+   
+   
+   
     	}
     
     // implement viewDues and settleDues which allow ONLY the owner to view and settle his loans respectively. They take in the address of a creditor as arguments. viewDues returns a uint256 corresponding to the due amount, and does not modify any state variables. settleDues returns a bool, true if the dues were settled and false otherwise. Remember to set the the pending loan to 0 after settling the dues.
