@@ -45,4 +45,21 @@ only the owner to access it) can use this to settle the amount
 of loan he owes to the input address, use MetaCoin's sendCoin 
 function to settle these dues, with appropriate checks for the
  return values from sendCoin. 
-
+## 3. SAMPLE INPUT 
+owner address=0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+After adding the code to remix ide, and deploying the code, the function of the code can be used:
+1. reqLoan: In this function the inputs can be:
+principle=500
+rate=5
+time=3
+2. sendCoin: In this function address can be acquired from the predefined addresses of remix:
+sender address:0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+amount:5000
+receiver address:0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
+3. settleDues: 
+creditor address: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+4. getbalance:
+for sender: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
+expected output for sender/owner=95000
+for receiver: 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
+expected output for receiver=5000
