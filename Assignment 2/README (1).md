@@ -79,5 +79,7 @@ expected output for sender/owner=95000
 
 for receiver: 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2
 
-
 expected output for receiver=5000
+
+NOTE: once loan is taken, it is marked as loan taken by the owner.
+afterwards when settle dues is used, the loan is payed from the owners account and the dues are nullified. This can be veriied by looking at the get userbalance regularly.
