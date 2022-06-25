@@ -5,6 +5,8 @@ pragma solidity >=0.4.25 <0.9.0;
 // coin/token contracts. If you want to create a standards-compliant
 // token, see: https://github.com/ConsenSys/Tokens. Cheers!
 
+
+
 contract MetaCoin {
 	mapping (address => uint256) balances;
 
@@ -58,6 +60,7 @@ contract Loan is MetaCoin {
         return a * b * z + a * d + b * c + b * d / z;
     }
     
+    
     // Fill up the following function definitions and also try to justify why some functions are pure and some are view and some are none, in your README.md
     function getCompoundInterest(uint256 principle, uint rate, uint time) public pure returns(uint256) {
     		// Anyone should be able to use this function to calculate the amount of Compound interest for given P, R, T
@@ -75,6 +78,7 @@ contract Loan is MetaCoin {
             time--;
         }
         return P/1e8;
+	
     }
     
     function reqLoan(uint256 principle, uint rate, uint time) public returns(bool correct) {
